@@ -59,7 +59,7 @@ Finally restart `Command`.
 ### Oh My Zsh
 First run the command to download script:
 ```shell
-curl -L https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.plugin.zsh -o ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/pnpm/pnpm.plugin.zsh --create-dirs
+curl -L https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.zsh -o ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/pnpm/pnpm.plugin.zsh --create-dirs
 ```
 
 And add it to your plugins in `~/.zshrc`:
@@ -75,7 +75,7 @@ Finally restart `zsh`.
 ### Only zsh
 First run the command to download script:
 ```shell
-curl -L https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.plugin.zsh -o $HOME/pnpm.alias.zsh
+curl -L https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.zsh -o $HOME/pnpm.alias.zsh
 ```
 
 And source it in `~/.zshrc`:
