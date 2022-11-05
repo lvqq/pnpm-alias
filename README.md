@@ -1,7 +1,7 @@
 # pnpm-alias
 Alias for pnpm common commands, support Windows PowerShell/Command and zsh.
 
-# alias
+# Alias
 | Alias              | Commands                    | Remarks                                                                             |
 | ------------------ | --------------------------- | ----------------------------------------------------------------------------------- |
 | pn                 | `pnpm`                      | The pnpm command                                                                    |
@@ -27,3 +27,60 @@ Alias for pnpm common commands, support Windows PowerShell/Command and zsh.
 | pnpx               | `pnpm dlx`                  | Fetch a package from the registry without installing it as a dependency             |
 | pnvm               | `pnpm env use --global`     | Node.js version management                                                          |
 | pnf                | `pnpm --recursive --filter` | Run a command in specific subsets of packages in a workspace                        |
+
+# Installation
+## On Windows PowerShell
+First run the command to download script:
+```shell
+iwr https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.ps1 -OutFile "$Home\pnpm.ps1"
+```
+
+And then add the following code in your `Powershell` profile. If you don't know how to update profile, read the [docs](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles) about it.
+```shell
+. $Home\pnpm.ps1
+```
+
+Finally restart `Powershell`.
+
+## On Windows Command
+First run the command to download script:
+```shell
+curl -L https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.bat -o %USERPROFILE%\pnpm.alias.bat
+```
+
+And to make it automatic, run the following command will add the registry value:
+```shell
+reg add "HKCU\Software\Microsoft\Command Processor" /v AutoRun ^ /t REG_EXPAND_SZ /d "%"USERPROFILE"%\pnpm.alias.bat" /f
+```
+
+Finally restart `Command`.
+
+## On zsh
+### Oh My Zsh
+First run the command to download script:
+```shell
+curl -L https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.plugin.zsh -o ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/pnpm/pnpm.plugin.zsh --create-dirs
+```
+
+And add it to your plugins in `~/.zshrc`:
+```
+plugins=(
+  ...
+  pnpm
+)
+```
+
+Finally restart `zsh`.
+
+### Only zsh
+First run the command to download script:
+```shell
+curl -L https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.plugin.zsh -o $HOME/pnpm.alias.zsh
+```
+
+And source it in `~/.zshrc`:
+```
+source ./pnpm.alias.zsh
+```
+
+Finally restart `zsh`.

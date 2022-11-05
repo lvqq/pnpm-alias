@@ -3,7 +3,7 @@
 # Powershell set-alias does not support params
 # With params, the following config does not work:
 # Set-Alias -Name pn -Value "pnpm"
-# Use function intead
+# Use function instead
 
 # pnpm
 function pn {
