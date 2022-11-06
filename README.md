@@ -1,5 +1,5 @@
 # pnpm-alias
-Alias for pnpm common commands, support Windows PowerShell/Command and zsh.
+Alias for pnpm common commands, support Windows PowerShell/Command and zsh/bash.
 
 # Alias
 | Alias              | Commands                    | Remarks                                                                             |
@@ -55,11 +55,11 @@ reg add "HKCU\Software\Microsoft\Command Processor" /v AutoRun ^ /t REG_EXPAND_S
 
 Finally restart `Command`.
 
-## On zsh
-### Oh My Zsh
+## On bash-like command
+### On Oh My Zsh
 First run the command to download script:
 ```shell
-curl -L https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.zsh -o ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/pnpm/pnpm.plugin.zsh --create-dirs
+curl -L https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.sh -o ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/pnpm/pnpm.plugin.zsh --create-dirs
 ```
 
 And add it to your plugins in `~/.zshrc`:
@@ -72,15 +72,15 @@ plugins=(
 
 Finally restart `zsh`.
 
-### Only zsh
+### On zsh/bash
 First run the command to download script:
 ```shell
-curl -L https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.zsh -o $HOME/pnpm.alias.zsh
+curl -L https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.sh -o $HOME/pnpm.alias.sh
 ```
 
-And source it in `~/.zshrc`:
+And source it in `$HOME/.zshrc` or `$HOME/.bashrc`:
 ```
-source ./pnpm.alias.zsh
+source $HOME/pnpm.alias.sh
 ```
 
-Finally restart `zsh`.
+Finally restart `zsh` or `bash`.
