@@ -45,7 +45,7 @@ Finally restart `Powershell`.
 ## On Windows Command
 First run the command to download script:
 ```shell
-curl -L https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.bat -o %USERPROFILE%\pnpm.alias.bat
+curl -fsSL https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.bat -o %USERPROFILE%\pnpm.alias.bat
 ```
 
 And to make it automatic, run the following command will add the registry value:
@@ -59,7 +59,7 @@ Finally restart `Command`.
 ### On Oh My Zsh
 First run the command to download script:
 ```shell
-curl -L https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.sh -o ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/pnpm/pnpm.plugin.zsh --create-dirs
+curl -fsSL https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.sh -o ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/pnpm/pnpm.plugin.zsh --create-dirs
 ```
 
 And add it to your plugins in `~/.zshrc`:
@@ -75,7 +75,7 @@ Finally restart `zsh`.
 ### On zsh/bash
 First run the command to download script:
 ```shell
-curl -L https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.sh -o $HOME/pnpm.alias.sh
+curl -fsSL https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.sh -o $HOME/pnpm.alias.sh
 ```
 
 And source it in `$HOME/.zshrc` or `$HOME/.bashrc`:
