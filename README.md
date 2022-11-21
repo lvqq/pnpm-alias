@@ -35,10 +35,15 @@ First run the command to download script:
 iwr https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.ps1 -OutFile "$Home\pnpm.ps1"
 ```
 
-And then add the following code in your `Powershell` profile. If you don't know how to update profile, read the [docs](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles) about it.
+And then add the following code in your `Powershell` profile:
 ```shell
 . $Home\pnpm.ps1
 ```
+
+The [PowerShell profile](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles) can be found at:
+- Windows PowerShell (PowerShell 5): `C:\Users\<USERNAME>\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
+- PowerShell 7: `C:\Users\<USERNAME>\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`
+- VSCode PowerShell: `C:\Users\<USERNAME>\Documents\PowerShell\Microsoft.VSCode_profile.ps1`
 
 Finally restart `Powershell`.
 
