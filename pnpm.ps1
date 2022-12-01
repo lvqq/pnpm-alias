@@ -85,6 +85,10 @@ function pns {
   pnpm start $args
 }
 
+function pnd {
+  pnpm dev $args
+}
+
 function pnt {
   pnpm test $args
 }

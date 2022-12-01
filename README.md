@@ -22,6 +22,7 @@ Alias for pnpm common commands, support Windows PowerShell/Command and zsh/bash.
 | pnw                | `pnpm why`                  | Show all packages that depend on the specified package                              |
 | pnr                | `pnpm run`                  | Run a script defined in the package's manifest file                                 |
 | pns                | `pnpm start`                | Run a command specified in the package.json's start property                        |
+| pnd                | `pnpm dev`                  | Run a command specified in the package.json's dev property                          |
 | pnt                | `pnpm test`                 | Run a command specified in the package.json's test property                         |
 | pne                | `pnpm exec`                 | Execute a shell command in scope of a project                                       |
 | pnpx               | `pnpm dlx`                  | Fetch a package from the registry without installing it as a dependency             |

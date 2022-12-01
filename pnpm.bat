@@ -33,6 +33,7 @@ doskey pnlsg=pnpm list --global $*
 doskey pnw=pnpm why $*
 doskey pnr=pnpm run $*
 doskey pns=pnpm start $*
+doskey pnd=pnpm dev $*
 doskey pnt=pnpm test $*
 doskey pne=pnpm exec $*
 doskey pnpx=pnpm dlx $*
