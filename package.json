@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "description": "",
+  "scripts": {
+    "build": "node index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@x-toolkit/command-alias": "0.1.0"
+  }
+}
