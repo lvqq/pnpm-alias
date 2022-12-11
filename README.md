@@ -33,7 +33,7 @@ Alias for pnpm common commands, support Windows PowerShell/Command and zsh/bash.
 ## On Windows PowerShell
 First run the command to download script:
 ```shell
-iwr https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.ps1 -OutFile "$Home\pnpm.ps1"
+iwr https://raw.githubusercontent.com/lvqq/pnpm-alias/main/alias/pnpm.ps1 -OutFile "$Home\pnpm.ps1"
 ```
 
 And then add the following code in your `Powershell` profile:
@@ -51,7 +51,7 @@ Finally restart `Powershell`.
 ## On Windows Command
 First run the command to download script:
 ```shell
-curl -fsSL https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.bat -o %USERPROFILE%\pnpm.alias.bat
+curl -fsSL https://raw.githubusercontent.com/lvqq/pnpm-alias/main/alias/pnpm.bat -o %USERPROFILE%\pnpm.alias.bat
 ```
 
 And to make it automatic, run the following command will add the registry value:
@@ -65,7 +65,7 @@ Finally restart `Command`.
 ### On Oh My Zsh
 First run the command to download script:
 ```shell
-curl -fsSL https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.sh -o ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/pnpm/pnpm.plugin.zsh --create-dirs
+curl -fsSL https://raw.githubusercontent.com/lvqq/pnpm-alias/main/alias/pnpm.sh -o ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/pnpm/pnpm.plugin.zsh --create-dirs
 ```
 
 And add it to your plugins in `~/.zshrc`:
@@ -81,7 +81,7 @@ Finally restart `zsh`.
 ### On zsh/bash
 First run the command to download script:
 ```shell
-curl -fsSL https://raw.githubusercontent.com/lvqq/pnpm-alias/main/pnpm.sh -o $HOME/pnpm.alias.sh
+curl -fsSL https://raw.githubusercontent.com/lvqq/pnpm-alias/main/alias/pnpm.sh -o $HOME/pnpm.alias.sh
 ```
 
 And source it in `$HOME/.zshrc` or `$HOME/.bashrc`:
@@ -90,3 +90,6 @@ source $HOME/pnpm.alias.sh
 ```
 
 Finally restart `zsh` or `bash`.
+
+## Development
+Update `config/pnpm-alias.yaml` and then run `pnpm run build`.

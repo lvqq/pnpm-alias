@@ -1,0 +1,27 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@x-toolkit/command-alias': 0.1.0
+
+devDependencies:
+  '@x-toolkit/command-alias': 0.1.0
+
+packages:
+
+  /@x-toolkit/command-alias/0.1.0:
+    resolution: {integrity: sha512-GTKmq55rlt2qVNC+ZaPnzQlOGPKc5ND6Z2/IKTTj6UL5JbzDSMYMljh3buKH/UDfeUtVXsqa4VP76SSyDfhWCg==}
+    engines: {node: ^14.13.0 || >=16.0.0}
+    dependencies:
+      js-yaml: 4.1.0
+    dev: true
+
+  /argparse/2.0.1:
+    resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
+    dev: true
+
+  /js-yaml/4.1.0:
+    resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
+    hasBin: true
+    dependencies:
+      argparse: 2.0.1
+    dev: true

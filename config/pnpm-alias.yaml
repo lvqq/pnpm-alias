@@ -1,0 +1,40 @@
+pnpm:
+  pn: pnpm
+
+pnpm add:
+  pna: pnpm add
+  pnad: pnpm add --save-dev
+  pnao: pnpm add --save-optional
+  pnap: pnpm add --save-peer
+  pnag: pnpm add --global
+
+pnpm install:
+  pni: pnpm install
+
+pnpm update:
+  pnup: pnpm update
+  pnupg: pnpm update --global
+
+pnpm remove:
+  pnrm: pnpm remove
+  pnrmg: pnpm remove --global
+
+pnpm link:
+  pnln: pnpm link
+  pnlng: pnpm link --global
+
+pnpm list:
+  pnls: pnpm list
+  pnlsg: pnpm list --global
+
+others:
+  pnw: pnpm why
+  pnr: pnpm run
+  pns: pnpm start
+  pnd: pnpm dev
+  pnb: pnpm build
+  pnt: pnpm test
+  pne: pnpm exec
+  pnpx: pnpm dlx
+  pnvm: pnpm env use --global
+  pnf: pnpm --recursive --filter
