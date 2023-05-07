@@ -1,5 +1,5 @@
 # pnpm-alias
-Alias for pnpm common commands, support Windows PowerShell/Command and zsh/bash.
+Alias for pnpm common commands, support Windows PowerShell/Command and zsh/bash. Powered by [command-alias](https://github.com/lvqq/command-alias).
 
 # Alias
 | Alias              | Commands                    | Remarks                                                                             |
@@ -23,6 +23,7 @@ Alias for pnpm common commands, support Windows PowerShell/Command and zsh/bash.
 | pnr                | `pnpm run`                  | Run a script defined in the package's manifest file                                 |
 | pns                | `pnpm start`                | Run a command specified in the package.json's start property                        |
 | pnd                | `pnpm dev`                  | Run a command specified in the package.json's dev property                          |
+| pnd                | `pnpm build`                | Run a command specified in the package.json's build property                        |
 | pnt                | `pnpm test`                 | Run a command specified in the package.json's test property                         |
 | pne                | `pnpm exec`                 | Execute a shell command in scope of a project                                       |
 | pnpx               | `pnpm dlx`                  | Fetch a package from the registry without installing it as a dependency             |
@@ -91,5 +92,8 @@ source $HOME/pnpm.alias.sh
 
 Finally restart `zsh` or `bash`.
 
-## Development
+# Development
 Update `config/pnpm-alias.yaml` and then run `pnpm run build`.
+
+# License
+[MIT](https://github.com/lvqq/pnpm-alias/blob/main/LICENSE)

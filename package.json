@@ -8,6 +8,6 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@x-toolkit/command-alias": "0.1.0"
+    "command-alias": "0.1.0"
   }
 }

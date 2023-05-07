@@ -1,3 +1,3 @@
-import { generateCommandAliasByPlugin } from '@x-toolkit/command-alias'
+import { transform } from 'command-alias'
 
-generateCommandAliasByPlugin('./config/pnpm-alias.yaml', './alias', { filename: 'pnpm' })
+transform('./config/pnpm-alias.yaml', './alias', { filename: 'pnpm' })
